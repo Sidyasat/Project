@@ -30,7 +30,7 @@
         </li>
       </ul>
     </nav>
-    <button type="button">Войти</button>
+    <a href="#">Войти</ф>
   </header>
 
   <main>
@@ -71,9 +71,11 @@
 
     <section>
       <h2>Фотогалерея</h2>
-      <a href="#">
-        <img src="#" alt="Интерьер">
-      </a>
+      <figure>
+        <a href="#">
+          <img src="#" alt="Интерьер">
+        </a>
+      </figure>
       <button type="button">Назад</button>
       <button type="button">Вперед</button>
     </section>
@@ -98,11 +100,30 @@
 
     <section>
       <h2>Записаться</h2>
-      <button type="submit">Отправить</button>
+      <form action="" method="post">
+        <p>
+          <label for="appointment-date">Дата</label>
+          <input id="appointment-date" type="date" name="date" value="2024-07-10">
+        </p>
+        <p>
+          <label for="appointment-time">Время</label>
+          <input id="appointment-time" type="time" name="time" value="10:00">
+        </p>
+        <p>
+          <label for="appointment-name">Ваше имя</label>
+          <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+        </p>
+        <p>
+          <label for="appointment-phone">Ваш телефон</label>
+          <input id="appointment-phone" type="tel" name="phone" value="+7 (123) 4567-890">
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
     </section>
 
     <section>
       <h2>Как до нас добраться?</h2>
+      <img src="" alt="">
       <button type="button">Закрыть</button>
     </section>
   </main>
@@ -136,6 +157,22 @@
   <section>
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль</p>
+    <form action="" method="post">
+      <p>
+        <label for="user-email">Ваш email</label>
+        <input id="user-email" type="email" name="email" placeholder="email@email.com">
+      </p>
+      <p>
+        <label for="user-password">Пароль</label>
+        <input id="user-password" type="password" name="password" placeholder="********">
+      </p>
+      <p>
+        <input id="user-remember" type="checkbox" name="remember">
+        <label for="user-remember">Запомнить меня</label>
+        <a href="#">Я забыл пароль!</a>
+      </p>
+      <button type="submit">Войти</button>
+    </form>
     <button type="button">Закрыть</button>
   </section>
 </body>
